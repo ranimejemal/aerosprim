@@ -12,6 +12,7 @@ export default defineConfig({
     react()
     
   ],
+  base: '/aerosprim',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
