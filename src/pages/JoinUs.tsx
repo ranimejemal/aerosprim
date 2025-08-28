@@ -110,7 +110,11 @@ export const JoinUs = () => {
       <Navbar />
 
       {/* Canvas stars */}
-      <canvas ref={canvasRef} className="absolute inset-0 z-0"></canvas>
+      <canvas
+  ref={canvasRef}
+  className="absolute inset-0 z-0 pointer-events-none"
+/>
+
 
       {/* Form Section */}
       <section
