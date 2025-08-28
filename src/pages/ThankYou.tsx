@@ -20,7 +20,6 @@ const ThankYou = () => {
     window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
 
-    // Initialize stars
     for (let i = 0; i < starCount; i++) {
       stars.push({
         x: Math.random() * canvas.width,
@@ -40,7 +39,6 @@ const ThankYou = () => {
         ctx.fillStyle = `rgba(255, 255, 255, ${star.brightness})`;
         ctx.fill();
 
-        // Move star slowly to the left
         star.x -= star.speed;
         if (star.x < 0) star.x = canvas.width;
       }
@@ -57,19 +55,19 @@ const ThankYou = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center px-6 relative overflow-hidden">
+    <div className="min-h-screen bg-black text-white flex items-center justify-center px-4 sm:px-6 relative overflow-hidden">
       <canvas ref={canvasRef} className="absolute inset-0 z-0"></canvas>
 
       <div className="text-center relative z-10">
-        <h1 className="text-5xl md:text-6xl font-tech font-bold mb-6 uppercase tracking-wider glitch-text">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-tech font-bold mb-6 uppercase tracking-wider glitch-text">
           THANK YOU!
         </h1>
-        <p className="text-lg md:text-xl text-white/80 mb-10 font-mono">
+        <p className="text-base sm:text-lg md:text-xl text-white/80 mb-10 font-mono max-w-xl mx-auto">
           Your message has been successfully sent. We will get back to you shortly.
         </p>
         <Link
           to="/"
-          className="inline-block px-8 py-3 bg-white text-black font-tech font-bold uppercase tracking-wider rounded-lg shadow-lg hover:bg-white/90 transition-all duration-300"
+          className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-tech font-bold uppercase tracking-wider rounded-lg shadow-lg hover:bg-white/90 transition-all duration-300"
         >
           Back to Home
         </Link>

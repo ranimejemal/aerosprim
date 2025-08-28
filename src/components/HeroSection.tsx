@@ -12,14 +12,14 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center bg-black px-8 overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-black px-4 sm:px-8 overflow-hidden">
       {/* Background Stars */}
       <div className="absolute inset-0 z-0">
         <Scene3D />
       </div>
 
       {/* Main Content */}
-      <div className="relative z-20 text-left max-w-3xl ml-8 md:ml-16 lg:ml-24 pt-24">
+      <div className="relative z-20 text-center sm:text-left max-w-3xl mx-auto sm:mx-0 sm:ml-8 lg:ml-24 pt-24 sm:pt-32 px-2">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -27,7 +27,7 @@ export const HeroSection = () => {
         >
           {/* Title */}
           <motion.h1
-            className="text-4xl md:text-6xl font-extrabold leading-tight text-white mb-6"
+            className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-white mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -37,7 +37,7 @@ export const HeroSection = () => {
 
           {/* Description */}
           <motion.p
-            className="text-sm md:text-sm text-white/80 mb-8 max-w-2xl leading-relaxed"
+            className="text-xs sm:text-sm md:text-base text-white/80 mb-8 max-w-xl sm:max-w-2xl leading-relaxed mx-auto sm:mx-0"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
@@ -48,13 +48,13 @@ export const HeroSection = () => {
           {/* Button */}
           <motion.button
             onClick={handleExploreClick}
-            className="inline-flex items-center px-6 py-3 border border-white text-white uppercase tracking-wide hover:bg-white hover:text-black transition"
+            className="inline-flex items-center px-6 py-3 sm:px-8 sm:py-4 border border-white text-white uppercase tracking-wide hover:bg-white hover:text-black transition text-sm sm:text-base"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.6 }}
           >
             Explore
-            <ArrowRight className="ml-2 w-5 h-5" />
+            <ArrowRight className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
           </motion.button>
         </motion.div>
       </div>
