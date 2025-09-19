@@ -22,22 +22,23 @@ export const WindTunnel = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-tech font-bold mb-6">
-            WIND TUNNEL
+            Formations 
           </h1>
           <p className="text-sm sm:text-base md:text-lg font-mono text-cosmic-white/80 mb-8">
-            Our Wind Tunnel Project is designed to help students and enthusiasts explore the fascinating world of aerodynamics. The goal of this project is to build a functional wind tunnel that will allow us to study airflow, test models, and better understand the principles of flight.
+            Our club provides technical training to help students build a strong 
+            foundation in programming, electronics, and aerospace design. 
+            Each formation prepares members for real-world aerospace challenges.
           </p>
 
           <div className="space-y-4 mb-8 text-left sm:text-left">
             <h2 className="font-tech font-semibold text-lg sm:text-xl mb-2">
-              Through this project, we will:
+              This year, we will learn:
             </h2>
             <ul className="list-disc list-inside font-mono text-sm sm:text-base text-cosmic-white/80 space-y-1">
-              <li><strong>Design and construct a wind tunnel using practical engineering methods.</strong></li>
-              <li><strong>Measure airflow and study how objects behave when exposed to different speeds of wind.</strong></li>
-              <li><strong>Experiment with aircraft models, rockets, and drones to understand lift, drag, and stability.</strong></li>
-              <li><strong>Learn hands-on skills in fluid mechanics, electronics (sensors, fans, controllers), and data collection.</strong></li>
-              <li><strong>Prepare for larger aerospace projects by mastering the basics of aerodynamic testing.</strong></li>
+              <li><strong>Python:</strong> From basics to simulations and automation.</li>
+              <li><strong>Arduino:</strong> Electronics, sensors, and control systems.</li>
+              <li><strong>SolidWorks:</strong> 3D modeling for aerospace structures.</li>
+              <li><strong>Mini Competition:</strong> Apply knowledge in a Python challenge with certificates 🎓.</li>
             </ul>
           </div>
 
@@ -52,8 +53,8 @@ export const WindTunnel = () => {
 
         {/* Right column (Image) */}
         <motion.img
-          src="/Instagram post - 1 (2).png"
-          alt="Wind Tunnel"
+          src="/Benefits of Retinol. - 2025-09-19T100757.280.png"
+          alt="Formations"
           className="w-full sm:w-80 lg:w-[650px] object-contain mx-auto lg:mx-0"
           style={{ position: "relative", right: 0, bottom: 0 }}
           initial={{ opacity: 0, x: 50 }}

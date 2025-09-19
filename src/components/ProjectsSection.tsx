@@ -5,16 +5,17 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
-    id: 1,
-    title: "WIND TUNNEL",
-    category: "AERODYNAMICS / EXPERIMENTAL SETUP",
-    description: "Build a small-scale subsonic wind tunnel with a transparent test section to analyze airflow around simple airfoils and models. Includes fan, flow straighteners, and measurement sensors.",
-    status: "FOUNDATION PROJECT",
-    specs: {
-      "PROPULSION": "Axial fan",
-      "RANGE": "Test section 30–40 cm models",
-      "MISSION": "Measure lift/drag, validate aero designs"
-    },
+  id: 1,
+  title: "FORMATIONS",
+  category: "TRAINING / SKILLS DEVELOPMENT",
+  description: "AeroSprim offers technical workshops to help members gain essential skills in programming, electronics, and design. These trainings prepare students for aerospace projects and competitions.",
+  status: "ACTIVE PROGRAM",
+  specs: {
+    "PYTHON": "From basics to data analysis and simulations",
+    "ARDUINO": "Microcontrollers, sensors, and control systems",
+    "SOLIDWORKS": "3D modeling for aerospace structures",
+    "COMPETITION": "Mini Python challenge with certificates"
+  },
     route: "/windtunnel" // <-- route for this project
   },
   {
