@@ -1,13 +1,12 @@
-
 import { useRef, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Stars } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 import { useGLTF } from '@react-three/drei'
-import { Mesh, Material, MeshStandardMaterial } from 'three';
+import { Mesh, MeshStandardMaterial } from 'three';
 
 
-
+// --- FloatingPlane (Minimal Change: Already uses relative units) ---
 const FloatingPlane = ({ position = [0, 0, 0], speed = 1 }: { position?: [number, number, number], speed?: number }) => {
   const groupRef = useRef<THREE.Group>(null);
   const timeRef = useRef(0);
@@ -50,6 +49,7 @@ const FloatingPlane = ({ position = [0, 0, 0], speed = 1 }: { position?: [number
 };
 
 
+// --- StarshipModel (No change needed) ---
 const StarshipModel = () => {
   const { scene } = useGLTF('/models/black bird sr71_obj.glb');
   const ref = useRef<any>(null);
@@ -82,7 +82,7 @@ const StarshipModel = () => {
 };
 
 
-
+// --- Texture (No change needed) ---
 const createCircleTexture = () => {
   const size = 64;
   const canvas = document.createElement('canvas');
@@ -113,12 +113,14 @@ const createCircleTexture = () => {
 
 const starTexture = createCircleTexture();
 
+// --- MovingStars (Key Change: Reduced star count for better performance) ---
 const MovingStars = () => {
   const starsRef = useRef<THREE.Points>(null);
   const positionsRef = useRef<Float32Array>();
   const colorsRef = useRef<Float32Array>();
 
-  const starCount = 2000;
+  // Reduced star count from 2000 to 1000 for better performance on mobile/low-end devices
+  const starCount = 1000; 
 
   // Initialize star positions and colors once
   useEffect(() => {
@@ -180,14 +182,15 @@ const MovingStars = () => {
 };
 
 
-
-
+// --- Scene3D (No change needed) ---
 export const Scene3D = () => {
   return (
     <div className="absolute inset-0 w-full h-full">
       <Canvas
         camera={{ position: [0, 0, 8], fov: 60 }}
         shadows
+        // Optional: reduce pixel ratio on mobile for huge performance gain
+        // dpr={[1, 1.5]} 
       >
         {/* Lighting */}
         <ambientLight intensity={0.4} />
@@ -200,7 +203,7 @@ export const Scene3D = () => {
         />
         <pointLight position={[-5, 3, -5]} intensity={0.5} />
 
-        {/* Background stars */}
+        {/* Background stars (now using fewer points) */}
         <MovingStars />
 
         {/* Spaceship */}

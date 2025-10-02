@@ -5,7 +5,7 @@ import { useRef } from 'react';
 const teamMembers = [
   {
     name: "Ranime Jemal",
-    role: "President",
+    role: "Founder & President",
     image: "/Gemini_Generated_Image_ewz31cewz31cewz3.png", 
   },
   {
