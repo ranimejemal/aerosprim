@@ -11,12 +11,12 @@ const teamMembers = [
   {
     name: "unknonw",
     role: "Vice President",
-    image: "/Sans titre (Présentation) (1).png",
+    image: "/Benefits of Retinol. - 2025-11-01T072112.966.png",
   },
   {
     name: "unknown",
     role: "Secritary",
-    image: "/Sans titre (Présentation) (1).png",
+    image: "/Benefits of Retinol. - 2025-11-01T072700.110.png",
   },
   {
     name: "unknown",
@@ -26,7 +26,7 @@ const teamMembers = [
   {
     name: "unknown",
     role: "Media Manager",
-    image: "/Sans titre (Présentation) (1).png",
+    image: "/Benefits of Retinol. - 2025-11-01T072639.981.png",
   },
   {
     name: "unknown",
