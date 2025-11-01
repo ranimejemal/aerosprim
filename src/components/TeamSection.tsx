@@ -82,9 +82,10 @@ const MemberCard = ({ member, index, isInView, isPresident = false }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-space-black/60 to-transparent" />
       </div>
-      <h3 className={`${nameTextSize} font-bold text-cosmic-white mb-0.5 text-center`}>
-        {member.name}
-      </h3>
+      <h3 className="text-sm sm:text-base lg:text-lg font-bold text-cosmic-white mb-0.5 text-center whitespace-nowrap">
+  {member.name}
+</h3>
+
       <p className={`font-medium mb-0.5 text-center ${roleTextSize}`}>
         {member.role}
       </p>
