@@ -9,12 +9,12 @@ const teamMembers = [
     image: "/Gemini_Generated_Image_ewz31cewz31cewz3.png", 
   },
   {
-    name: "unknonw",
+    name: "Sarra Fekih",
     role: "Vice President",
     image: "/Benefits of Retinol. - 2025-11-01T072112.966.png",
   },
   {
-    name: "unknown",
+    name: "Nour Omzine Bayoudh",
     role: "Secritary",
     image: "/Benefits of Retinol. - 2025-11-01T072700.110.png",
   },
@@ -24,9 +24,9 @@ const teamMembers = [
     image: "/Sans titre (Présentation) (1).png",
   },
   {
-    name: "unknown",
+    name: "Sarra Ben Rayana",
     role: "Media Manager",
-    image: "/Benefits of Retinol. - 2025-11-01T072639.981.png",
+    image: "/Benefits of Retinol. - 2025-11-01T074517.255.png",
   },
   {
     name: "unknown",
