@@ -21,7 +21,7 @@ const teamMembers = [
   {
     name: "unknown",
     role: "Treasurer",
-    image: "/Sans titre (Présentation) (1).png",
+    image: "/tresurer.png",
   },
   {
     name: "Sarra Ben Rayana",
