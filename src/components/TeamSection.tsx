@@ -19,7 +19,7 @@ const teamMembers = [
     image: "/Benefits of Retinol. - 2025-11-01T072700.110.png",
   },
   {
-    name: "unknown",
+    name: "Abir Ben Tekaya",
     role: "Treasurer",
     image: "/tresurer.png",
   },
