@@ -29,9 +29,9 @@ const teamMembers = [
     image: "/Benefits of Retinol. - 2025-11-01T074517.255.png",
   },
   {
-    name: "unknown",
+    name: "Med Ali Messaoud",
     role: "Sponsoring Manager",
-    image: "/Sans titre (Présentation) (1).png",
+    image: "/sponsoringmanagerr.png",
   },
   {
     name: "unknown",
