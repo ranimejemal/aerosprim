@@ -34,9 +34,9 @@ const teamMembers = [
     image: "/sponsoringmanagerr.png",
   },
   {
-    name: "unknown",
+    name: "Mouadh Maaref",
     role: "Training Manager",
-    image: "/Sans titre (Présentation) (1).png",
+    image: "/training.png",
   },
 ];
 
