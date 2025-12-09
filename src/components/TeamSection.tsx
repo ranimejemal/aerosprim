@@ -31,12 +31,12 @@ const teamMembers = [
   {
     name: "Med Ali Messaoud",
     role: "Sponsoring Manager",
-    image: "/sponsoringmanagerr.png",
+    image: "/sponsor22.png",
   },
   {
-    name: "Mouadh Maaref",
+    name: "Yahya Lahmar",
     role: "Training Manager",
-    image: "/training.png",
+    image: "/training22.png",
   },
 ];
 
