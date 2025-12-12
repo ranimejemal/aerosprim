@@ -40,11 +40,6 @@ const teamMembers = [
   },
 
  
-  {
-    name: "Riyadh Kirdou",
-    role: "Sponsoring Manager",
-    image: "/sponsmang.png",
-  },
 ];
 
 
